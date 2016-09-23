@@ -11,6 +11,13 @@ public class OnlineStore {
 	{
 		products = new Product[10];
 		orders = new Order[10];
+		
+		for(int i = 0; i < 10; i++)
+		{
+			orders[i] = null;
+			products[i] = null;
+		}
+	
 		this.name = s;
 		index = 0;
 		orderIndex = 0;
@@ -32,11 +39,11 @@ public class OnlineStore {
 
 		System.out.print("Product Price: ");
 		price = keyboard.nextDouble();
-
+		
+	
 		if( exists(num) != -1 ){
 			System.out.println("Input Error: Product " +  num + " already exists.");
 			return;
-
 		}
 
 		Product temp = new Product(num, name, price);
