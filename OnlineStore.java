@@ -100,6 +100,8 @@ public class OnlineStore {
 
 	}
 
+	// linear search, return -1 if doesn't exist given criteria
+	// return the index of location if found
 	public int exists(int prodNum) {
 
 		for(int i = 0; i < index; i++)
